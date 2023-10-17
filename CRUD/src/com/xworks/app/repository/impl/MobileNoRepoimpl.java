@@ -5,7 +5,7 @@ import com.xworks.app.repo.PincodeRepositary;
 
 public class MobileNoRepoimpl implements MobileNoRepo {
 	
-	private long[] mobiles = new long[TOTAL_ITEMS];
+	private int mobiles = new long[TOTAL_ITEMS];
 	private int position;
 
 	@Override
@@ -31,8 +31,8 @@ public class MobileNoRepoimpl implements MobileNoRepo {
 		public boolean IsExist(int number) {
 			for(int index=0;index<=this.position;index++)
 	{
-		int temp=this.mobiles[index];
-		if(temp =null && temp.equals(mobiles))
+		long temp=mobiles[index];
+		if(temp =null && temp==mobiles)
 
 			
 	{
@@ -41,6 +41,9 @@ public class MobileNoRepoimpl implements MobileNoRepo {
 		
 	}
 	}
+	return mobileNoRepo.super.IsExist(number);
+
+	}
 	
 	
 	
@@ -48,6 +51,6 @@ public class MobileNoRepoimpl implements MobileNoRepo {
 
 
 
-	
+	}
 
 

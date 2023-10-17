@@ -3,38 +3,35 @@ package Overloading;
 public class Elevator {
 	
 
-	public class Gadget {
-
-		public String type;
-		public double price;
-		
-		
-		public void item()
-		{
-			System.out.println("invoking item of no-arg..");
-			item("Mobile");
-			item(14999);
-		}
-		
-		public void item(String type)
-		{
-			System.out.println("invoking item of String..");
-			System.out.println("Type :"+type);
-		}
-		
-		public void item(double price)
-		{
-			System.out.println("invoking item of double...");
-			System.out.println("Price :"+price);
-		}
-		
-		public void item(String type,double price)
-		{
-			item(type);
-			item(price);
-		}
-		
+	
+	public String company;
+	public int capacity;
+	
+	public void lift()
+	{
+		System.out.println("invoking lift of no-arg..");
+		lift("Schindler");
+		lift(600);
 	}
-
-
+	
+	public void lift(String company)
+	{
+		System.out.println("invoking lift of String..");
+		System.out.println("Company : "+company);
+	}
+	
+	public void lift(int capacity)
+	{
+		System.out.println("invoking lift of int..");
+		System.out.println("Capacity : "+capacity);
+	}
+	
+	public void lift(String company,int capacity)
+	{
+		lift(company);
+		lift(capacity);
+	}
 }
+
+
+

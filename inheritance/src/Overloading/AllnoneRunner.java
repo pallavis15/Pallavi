@@ -7,7 +7,7 @@ public class AllnoneRunner {
 	
 				
 				System.out.println("--------------------IRON-BOX-------------------");
-				IronBox box=new IronBox();
+				Ironbox box=new Ironbox();
 				box.iron();
 				System.out.println("\n");
 				box.iron("Usha",1450);
@@ -29,7 +29,7 @@ public class AllnoneRunner {
 				
 				System.out.println("--------------------UMBRELLA-------------------");
 				
-				Umbrella drop=new Umbrella();
+				Umberlla drop=new Umberlla();
 				drop.rain();
 				System.out.println("\n");
 				drop.rain("Black",250);
@@ -43,7 +43,7 @@ public class AllnoneRunner {
 				
 				System.out.println("--------------------PLIER-------------------");
 				
-				Plier kit=new Plier();
+				Piller kit=new Piller();
 				kit.tool();
 				System.out.println("\n");
 				kit.tool("Knipex",'M');
